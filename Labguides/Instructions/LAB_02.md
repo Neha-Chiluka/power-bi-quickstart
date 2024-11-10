@@ -21,6 +21,7 @@ The default interface is the Report view.
 
 **Now let us understand the top most options on the toolbar.**
 
+![1](https://github.com/Neha-Chiluka/power-bi-quickstart/blob/master/Images/3.png?raw=true "1")
 
 1. File
 - New: Start a new report.
@@ -87,3 +88,8 @@ There are four views
 - Model View: The Model View is where you can see the relationships between different tables in your data model.
 - Dax Querry View:  The DAX Query View is used for writing and testing DAX (Data Analysis Expressions) queries directly within Power BI
 
+
+You can always build new reports/dashboards in the same sheet or in new sheets by clicking +mark as shown below
+
+![2](https://github.com/Neha-Chiluka/power-bi-quickstart/blob/master/Images/5.png?raw=true "2")
+we will explore more about the interface in the upcoming labs!
