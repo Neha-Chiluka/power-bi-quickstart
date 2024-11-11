@@ -4,6 +4,7 @@ In our default view( i.e Report View) we have filters, visualizations and data p
 
 **Note:- This is a theory explanation of all the features in the panes**
 
+![1](https://github.com/Neha-Chiluka/power-bi-quickstart/blob/master/Images/8.png?raw=true "1")
 
 
 **1. Filters in Power BI (Filter Pane)**
@@ -14,15 +15,15 @@ Filters allow you to control which data is displayed in your report, and they pr
 
 There are three main types of filters in Power BI:
 
-- Visual Level Filters: These filters apply only to a specific visualization. If you apply a filter to a visualization, it only affects that chart or graph, not the entire report.
+- **Visual Level Filters:** These filters apply only to a specific visualization. If you apply a filter to a visualization, it only affects that chart or graph, not the entire report.
 
 *Example: If you apply a filter on a bar chart to only show data for "2023", the other visualizations on the report will not be affected.*
 
-- Page Level Filters: These filters apply to all visualizations on a specific page or tab of your report. They are useful when you want to apply a uniform filter across the page but leave other pages unaffected.
+- **Page Level Filters:** These filters apply to all visualizations on a specific page or tab of your report. They are useful when you want to apply a uniform filter across the page but leave other pages unaffected.
 
 *Example: If you apply a filter for "Region = North America" on a page, all visualizations on that page will reflect this region-specific data.*
 
-- Report Level Filters: These filters apply to every visualization in the entire report, regardless of the page. They are global filters that ensure consistency across all pages in the report.
+- **Report Level Filters:** These filters apply to every visualization in the entire report, regardless of the page. They are global filters that ensure consistency across all pages in the report.
 
 *Example: If you apply a filter for "Year = 2023" at the report level, all pages in the report will show only data from 2023.*
 
@@ -33,23 +34,25 @@ You can drag fields from your Fields pane to the Filters pane (located on the ri
 
 When you drag a field to the filter area, you can define specific conditions to filter the data, such as:
 
-- Basic filtering: Select specific values (e.g., regions, products).
+![2](https://github.com/Neha-Chiluka/power-bi-quickstart/blob/master/Images/10.png?raw=true "2")
 
-- Advanced filtering: Set conditions like "greater than", "less than", or "equals".
+- **Basic filtering:** Select specific values (e.g., regions, products).
 
-- Top N filters: Show only the top or bottom N items based on a specific measure (e.g., top 10 sales).
+- **Advanced filtering:** Set conditions like "greater than", "less than", or "equals".
+
+- **Top N filters:** Show only the top or bottom N items based on a specific measure (e.g., top 10 sales).
 
 You can apply filters either to individual visualizations or across the entire report depending on the level at which you want the filter to apply.
 
 **Filter Pane Options**
 
-- Basic Filtering: Select or deselect individual categories.
+- **Basic Filtering:** Select or deselect individual categories.
 
-- Advanced Filtering: Create conditional filters (e.g., showing data where sales > $1,000).
+- **Advanced Filtering:** Create conditional filters (e.g., showing data where sales > $1,000).
 
-- Relative Date Filtering: Filter by time periods, such as "Last 7 days," "This quarter," etc.
+- **Relative Date Filtering:** Filter by time periods, such as "Last 7 days," "This quarter," etc.
 
-- Searchable Filters: For fields with many distinct values, you can search to quickly find and apply filters.
+- **Searchable Filters:** For fields with many distinct values, you can search to quickly find and apply filters.
 
 
 ------------
@@ -58,6 +61,8 @@ You can apply filters either to individual visualizations or across the entire r
 **2. Visualizations in Power BI (Visualizations Pane)**
 
 The Visualizations pane in the Report View allows you to choose the type of visualization that best represents your data, such as charts, graphs, maps, tables, and more. These visualizations are interactive and can be customized to fit the specific needs of your report.
+
+![5](https://github.com/Neha-Chiluka/power-bi-quickstart/blob/master/Images/9.png?raw=true "5")
 
 **Common Types of Visualizations**
 
@@ -100,6 +105,10 @@ In addition to the standard visuals, Power BI allows you to import custom visual
 The data pane in the Report View displays the data columns and tables from the data model you’ve imported or created. These fields in the tables are used to create your visualizations and filters.
 
 **Note: You will be able to see these fields when you import tables into PowerBI(Which you will be learning in advanced level of PowerBI labs)**
+
+**Below is a sample image**
+
+![4](https://github.com/Neha-Chiluka/power-bi-quickstart/blob/master/Images/11.png?raw=true "4")
 
 **Organizing Data Columns**
 
