@@ -6,8 +6,10 @@
 
 Get started!
 
-You can find PowerBI on your windows bar or you can search PowerBI
-
+You can find PowerBI on your windows bar or you can search PowerBI in the search bar.
+![7](https://github.com/Neha-Chiluka/power-bi-quickstart/blob/master/Images/shortcut.jpg?raw=true "7")
+or 
+![6](https://github.com/Neha-Chiluka/power-bi-quickstart/blob/master/Images/To_find_PowerBI_from_task_bar.jpg?raw=true "6")
 
 #### Task 1: Click On Blank Report In PowerBI.
 
@@ -83,13 +85,16 @@ And.. much more help options!
 
 There are four views
 
+
+![7](https://github.com/Neha-Chiluka/power-bi-quickstart/blob/master/Images/6.png?raw=true "7")
+
 - Report View: The Report View is the primary interface in Power BI Desktop for building, designing, and viewing reports
 - Table View: The Table View allows you to view and inspect the raw data from your data model.
 - Model View: The Model View is where you can see the relationships between different tables in your data model.
 - Dax Querry View:  The DAX Query View is used for writing and testing DAX (Data Analysis Expressions) queries directly within Power BI
 
-
-You can always build new reports/dashboards in the same sheet or in new sheets by clicking +mark as shown below
+You can always build new reports/dashboards in the same page or in new page by clicking +mark as shown below
 
 ![2](https://github.com/Neha-Chiluka/power-bi-quickstart/blob/master/Images/5.png?raw=true "2")
+
 we will explore more about the interface in the upcoming labs!
