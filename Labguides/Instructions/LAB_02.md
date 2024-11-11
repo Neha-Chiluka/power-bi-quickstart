@@ -7,8 +7,11 @@
 Get started!
 
 You can find PowerBI on your windows bar or you can search PowerBI in the search bar.
+
 ![7](https://github.com/Neha-Chiluka/power-bi-quickstart/blob/master/Images/shortcut.jpg?raw=true "7")
+
 or 
+
 ![6](https://github.com/Neha-Chiluka/power-bi-quickstart/blob/master/Images/To_find_PowerBI_from_task_bar.jpg?raw=true "6")
 
 #### Task 1: Click On Blank Report In PowerBI.
