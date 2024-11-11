@@ -1,171 +1,143 @@
-# Module 4: Shaping and Combining Data
+# Module 4: Filters , Visualizations And Data Pane
 
-- [Module 4: Shaping and Combining Data](#module-4-shaping-and-combining-data)
-  - [Lab: Shaping and Combining Data](#lab-shaping-and-combining-data)
-    - [Exercise 1: Shape Power BI Data](#exercise-1-shape-power-bi-data)
-      - [Task 1: Preparing the Environment](#task-1-preparing-the-environment)
-      - [Task 2: Import Data from Excel](#task-2-import-data-from-excel)
-      - [Task 3: Apply Formatting to the Existing Data](#task-3-apply-formatting-to-the-existing-data)
-    - [Exercise 2: Combine Power BI Data](#exercise-2-combine-power-bi-data)
-      - [Task 1: Add Related Data to the Shaped Data](#task-1-add-related-data-to-the-shaped-data)
+In our default view( i.e Report View) we have filters, visualizations and data panes which are indeed adds up to the part of data analysis part.
 
-**Note:** Lab Solution is present in `Desktop\power-bi-quickstart\Labfiles\Lab04\Solution` folder:
+**Note:- This is a theory explanation of all the features in the panes**
 
-## Lab: Shaping and Combining Data
 
-### Exercise 1: Shape Power BI Data
 
-#### Task 1: Preparing the Environment
+**1. Filters in Power BI (Filter Pane)**
 
-Lab environment is already setup.
+Filters allow you to control which data is displayed in your report, and they provide an interactive way for users to drill down and segment data on the report.
 
-#### Task 2: Import Data from Excel
+**Types of Filters**
 
-1. Make sure previous task was completed.
+There are three main types of filters in Power BI:
 
-2. On the Taskbar, click **Power BI Desktop**.
+- Visual Level Filters: These filters apply only to a specific visualization. If you apply a filter to a visualization, it only affects that chart or graph, not the entire report.
 
-3. Click **New** > **Report**:
+*Example: If you apply a filter on a bar chart to only show data for "2023", the other visualizations on the report will not be affected.*
 
-![](./images/new.png)
+- Page Level Filters: These filters apply to all visualizations on a specific page or tab of your report. They are useful when you want to apply a uniform filter across the page but leave other pages unaffected.
 
-5. In the **Power BI Desktop** window, click **Get data**.
+*Example: If you apply a filter for "Region = North America" on a page, all visualizations on that page will reflect this region-specific data.*
 
-6. In the **Get Data** window, click **Excel Workbook**:
+- Report Level Filters: These filters apply to every visualization in the entire report, regardless of the page. They are global filters that ensure consistency across all pages in the report.
 
-![](./images/s33.png)
+*Example: If you apply a filter for "Year = 2023" at the report level, all pages in the report will show only data from 2023.*
 
-7. In the **Open** dialog box, browse to the **Desktop\\power-bi-quickstart\\Labfiles\\Lab04\\Starter\\Project** folder, click **Sales - Europe.xlsx**, and then click **Open**.
 
-![](./images/s34.png)
+**Using Filters in Power BI**
 
-8. In the **Navigator** window, select the **Europe** check box, and then click **Load**.
+You can drag fields from your Fields pane to the Filters pane (located on the right side of the Report View).
 
-![](./images/s35.png)
+When you drag a field to the filter area, you can define specific conditions to filter the data, such as:
 
-9. On the **Home** tab, click the **Get Data** arrow, and then click **Excel Workbook**.
+- Basic filtering: Select specific values (e.g., regions, products).
 
-10. In the **Open** dialog box, browse to the **Desktop\\power-bi-quickstart\\Labfiles\\Lab04\\Starter\\Project** folder, click **Sales - North America.xlsx**, and then click **Open**.
+- Advanced filtering: Set conditions like "greater than", "less than", or "equals".
 
-![](./images/s36.png)
+- Top N filters: Show only the top or bottom N items based on a specific measure (e.g., top 10 sales).
 
-11. In the **Navigator** window, select the **North America** check box, and then click **Transform Data**. This opens the Power Query Editor window.
+You can apply filters either to individual visualizations or across the entire report depending on the level at which you want the filter to apply.
 
-![](./images/s37.png)
+**Filter Pane Options**
 
+- Basic Filtering: Select or deselect individual categories.
 
-#### Task 3: Apply Formatting to the Existing Data
+- Advanced Filtering: Create conditional filters (e.g., showing data where sales > $1,000).
 
-1. In the **Queries \[2\]** pane, click **Europe** to show the data preview if this is not already displayed.
+- Relative Date Filtering: Filter by time periods, such as "Last 7 days," "This quarter," etc.
 
-**Note:** You can also open **Queries \[2\]** pane as show below. Click `Europe` in the **Data** pane and select edit query:
+- Searchable Filters: For fields with many distinct values, you can search to quickly find and apply filters.
 
-![](./images/query.png)
 
-2. Right-click the **ProductKey** column, and click **Remove**.
+------------
 
-![](./images/s38.png)
 
-3. Right-click the **SalesOrderNumber** column, and click **Remove**.
+**2. Visualizations in Power BI (Visualizations Pane)**
 
-4. Right-click the **SalesTerritoryCountry** column, click **Rename**, type **Country**, and then press Enter.
+The Visualizations pane in the Report View allows you to choose the type of visualization that best represents your data, such as charts, graphs, maps, tables, and more. These visualizations are interactive and can be customized to fit the specific needs of your report.
 
-![](./images/s39.png)
+**Common Types of Visualizations**
 
-5. Right-click the **SalesTerritoryGroup** column, click **Rename**, type **Sales Territory**, and then press Enter.
+- **Bar and Column Charts:** Display data with rectangular bars (horizontal or vertical). Bar charts are great for comparing categories, while column charts are better for time-based data or comparisons across categories.
 
-6. Right-click the **EnglishProductCategoryName** column, click **Rename**, type **Main Category**, and then press Enter.
+- **Line Chart:** Useful for showing trends over time, making it great for time-series analysis.
 
-7. Right-click the **EnglishProductSubcategoryName** column, click **Rename**, type **Sub Category**, and then press Enter.
+- **Pie and Donut Charts:** Good for showing proportions or percentages of a whole.
 
-8. Right-click the **EnglishProductName** column, click **Rename**, type **Product**, and then press Enter.
+- **Tables:** Display data in a tabular format. Useful for detailed data presentation.
 
-![](./images/s40.png)
+- **Matrix:** Similar to a table, but with the ability to group data by rows and columns, making it ideal for hierarchical data or multi-dimensional analysis.
 
-9. Right-click the **Color** column, point to **Move**, and then click **Left**.
+- **Card and KPI Visuals:** Display single values like total sales or key performance indicators (KPIs), such as target vs. actual metrics.
 
-![](./images/s41.png)
+- **Tree Map:** Displays hierarchical data using nested rectangles. The size and color of the rectangles can represent values and categories.
 
-10. In the **Queries \[2\]** pane, click **North America**.
+- **Map Visualizations:** Plot data on a map using geographical information (e.g., country, state, zip code) to visualize location-based data.
 
-11. Right-click the **ProductKey** column, and click **Remove**.
+- **Slicers:** Interactive filters that allow users to select data to display in the report. Slicers work similarly to filters but are visible on the report page, enabling users to modify the report view dynamically.
 
-12. Right-click the **SalesOrderNumber** and click **Remove**.
+- **Funnel Chart:** Shows data progression through stages, often used for sales or marketing pipelines.
 
-13. Right-click the **SalesTerritoryCountry** column, click **Rename**, type **Country**, and then press Enter.
+- **Waterfall Chart:** Helps to visualize cumulative changes in a measure over time, showing how values build or deplete in a sequential manner.
 
-14. Right-click the **SalesTerritoryGroup** column, click **Rename**, type **Sales Territory**, and then press Enter.
+**Custom Visuals**
+In addition to the standard visuals, Power BI allows you to import custom visuals from the AppSource marketplace or create your own custom visualizations using tools like the Power BI developer tools. These can add specialized chart types or other visualizations to suit specific needs.
 
-15. Right-click the **EnglishProductCategoryName** column, click **Rename**, type **Main Category**, and then press Enter.
+**Interactivity with Visualizations**
+- **Cross-filtering and Cross-highlighting:** When you select an item in one visualization (e.g., a bar in a bar chart), other visualizations on the report are automatically filtered or highlighted to reflect that selection.
+- **Drillthrough:** Allows users to right-click on a data point in a visualization and drill through to a detailed page that shows more granular data based on that specific point.
+- **Tooltip:** Hovering over a visualization shows additional information or metrics related to the data point being hovered over. Tooltips can be customized to show relevant details.
 
-16. Right-click the **EnglishProductSubcategoryName** column, click **Rename**, type **Sub Category**, and then press Enter.
 
-17. Right-click the **EnglishProductName** column, click **Rename**, type **Product**, and then press Enter.
+------------
 
-18. Right-click the **Color** column, point to **Move**, and then click **Left**.
 
-19. On the **Home** tab, in the **Query** group, click **Advanced Editor**. Notice that the query includes the changes you have made, and then click **Cancel**.
+**3. Data Columns in Power BI (Fields Pane)**
 
-![](./images/s42.png)
+The data pane in the Report View displays the data columns and tables from the data model you’ve imported or created. These fields in the tables are used to create your visualizations and filters.
 
-20. Leave the Power Query Editor window open for the next exercise.
+**Note: You will be able to see these fields when you import tables into PowerBI(Which you will be learning in advanced level of PowerBI labs)**
 
----
+**Organizing Data Columns**
 
-### Exercise 2: Combine Power BI Data
+- **Tables:** In the Fields pane, data is organized into tables (which represent your data sources or queries). You can expand or collapse tables to see the columns within them.
 
-#### Task 1: Add Related Data to the Shaped Data
+- **Columns:** Each table contains columns, which represent individual data fields (e.g., "Sales Amount," "Product Name," "Region"). These columns can be used in your visualizations and filters.
 
-1. In the **Queries \[2\]** pane, click **Europe**.
+- **Measures:** In addition to regular columns, you may have calculated measures (e.g., Total Sales, Average Revenue), which are calculations made based on other columns. Measures are typically defined using DAX (Data Analysis Expressions).
 
-2. In the **Combine** group, click **Append Queries**.
+**Using Data Columns in Visualizations**
 
-![](./images/s43.png)
+**Drag and Drop**: You can drag and drop columns and measures from the Fields pane into visualizations. 
 
-3. In the **Append** dialog box, in the **Table to append** list, click **North America**, and then click **OK**. The rows are combined.
+**For example:**
+*Drag a "Product Category" field into the Axis of a column chart.
+Drag a "Sales Amount" measure into the Values of a chart.
+Use columns in the Legend or Details areas of certain visualizations (like pie charts or scatter plots).*
 
-![](./images/s44.png)
+- **Field Formatting**
+You can format data columns by clicking on a column or measure and adjusting its properties. 
 
-4. On the **Country** column header, click the **Arrow**, and then click **Load** **more**. You should now see that **United States** and **Canada** are included, and then click **Cancel**.
+**For example:**
+*Set the data type (e.g., Text, Number, Date).
+Adjust number formatting (e.g., currency, percentage, decimal places).
+Customize the way data is displayed in visualizations (e.g., changing font sizes, colors).*
 
-![](./images/s45.png)
 
-5. On the **Home** tab, click the **New Source** arrow, and then click **Excel WorkBook**.
+- **Filters:**
+Apply filters to specific visualizations, pages, or the entire report.
+Use basic, advanced, or relative date filters to control data visibility.
 
-6. In the **Open** dialog box, browse to the **Desktop\\power-bi-quickstart\\Labfiles\\Lab04\\Starter\\Project** folder, click **Country Codes.xlsx**, and then click **Open**.
+- **Visualizations:**
+Choose from a wide variety of charts, tables, maps, and custom visuals to represent your data.
 
-7. In the **Navigator** dialog box, select the **Country Codes** check box, and then click **OK**.
+Interact with visuals using cross-filtering, drillthrough, and tooltips.
+Customize the appearance and behavior of visualizations to communicate insights effectively.
 
-![](./images/s46.png)
 
-8. Click **Use First Row as Headers** as shown below:
+------------
 
-![](./images/5.png)
 
-9. In Power Query Editor, in the **Queries \[3\]** pane, click **Europe**.
-
-10. In the **Combine** group, click **Merge Queries**.
-
-![](./images/s47.png)
-
-11. In the **Merge** dialog box, click the **Country** column to select it.
-
-12. In the list below the table, click **Country Codes**, click the **Country** column, and then click **OK**.
-
-![](./images/6.png)
-
-13. The **Country Codes** is added to the **Europe** query.
-
-14. In the **Country Codes** header, click the **double-arrow** icon, clear the **Territory**, **Country**, and **Use original column name as prefix** check boxes, and then click **OK**.
-
-![](./images/7.png)
-
-15. Right-click the **Code** column, point to **Move**, and click **To Beginning**.
-
-16. Right-click the **Code** column, click **Rename**, type **Country Code**, and then press Enter.
-
-![](./images/s48.png)
-
-17. On the **Home** tab, click the **Close & Apply** arrow, and then click **Apply**.
-
-18. Close Power Query Editor, and then close Power BI Desktop without saving any changes.
